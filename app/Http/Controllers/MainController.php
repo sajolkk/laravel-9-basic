@@ -23,4 +23,9 @@ class MainController extends Controller
         // $user->save();
         return view('post',$data);
     }
+
+    public function postForm()
+    {
+        // 
+    }
 }

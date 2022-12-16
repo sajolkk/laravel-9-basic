@@ -23,3 +23,7 @@ Route::post('/test', function(Request $request){
     echo $request['name'];
 });
 Route::get('user-post',[MainController::class,'userPost']);
+Route::get('post',[MainController::class,'postForm'])->name('post.create');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
